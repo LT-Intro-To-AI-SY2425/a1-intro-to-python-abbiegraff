@@ -25,7 +25,7 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
-    raise NotImplementedError("absolute")
+    return -1 * n if n < 0 else: n
 
 
 def factorial(n: int) -> int:
