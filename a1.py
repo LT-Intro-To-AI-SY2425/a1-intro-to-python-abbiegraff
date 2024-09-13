@@ -38,7 +38,14 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
+    # 4! = 4 * 3 * 2 * 1 
+    # 5! = 5 * 4 * 3 * 2 * 1
+    result = 1 
+    for x in range(1, n + 1):
+        result *= x
+    return result 
+    
+    
 
 
 T = TypeVar("T")
@@ -55,6 +62,8 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
+    
+    lst = []
     raise NotImplementedError("every_other")
 
 
@@ -124,6 +133,8 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
 if __name__ == "__main__":
     assert absolute(-1) == 1, "absolute of -1 failed"
     assert factorial(4) == 24, "factorial of 4 failed"
+    assert factorial(5) == 120, "factorial of 5 failed"
+    assert factorial(0) == 1, "factorial of 0 failed"
     assert every_other([1, 2, 3, 4, 5]) == [
         1,
         3,
