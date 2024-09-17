@@ -62,9 +62,12 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    
-    lst = []
-    raise NotImplementedError("every_other")
+    return lst[0:len(lst)+1:2] #first element is where we start (::2) <-shortcut slices
+    #java way: new_lst = []
+    #for i in range(0, len(lst), 2):
+    #if i % 2 == 0: (% is divided)
+    #new_lst.append(lst[i])
+    #return new_lst
 
 
 def sum_list(lst: List[int]) -> int:
@@ -77,7 +80,10 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    s = 0
+    for el in lst:
+        s += el
+    return s 
 
 
 def mean(lst: List[int]) -> float:
@@ -143,6 +149,7 @@ if __name__ == "__main__":
     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
+    assert sum_list([]) == 0, "sum_list of [] failed" 
 
     names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
     assert duck_duck_goose(names) == ["roscoe", "law"]
