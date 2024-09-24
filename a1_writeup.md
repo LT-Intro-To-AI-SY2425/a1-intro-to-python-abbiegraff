@@ -14,10 +14,12 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
-
+I am so far kinda confused about it and I feel like I don't know what is the same and different from Java and I need to work on what syntax to use. I also don't fully understand the percents. 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
-
+Python and Java both use similar phrasing and structure with while loops, if statements, etc. Both take user input and give output.  
 
 3. What are some things that you learned through this assignment?
+
+Through this assignment, I learned that python can be more straightforward than Java, and there are more shortcuts. I also learned that you don't need semicolons after everything. 
